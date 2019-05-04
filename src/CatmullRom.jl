@@ -2,6 +2,12 @@ module CatmullRom
 
 export MyType, foo
 
+struct Vector2
+         x::Float64 = 0.0;
+         y = 0.0f;
+end  
+
+
 struct MyType
     x
 end
