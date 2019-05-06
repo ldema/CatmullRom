@@ -59,6 +59,7 @@ function IntermediateVertex(v1::Vertex2D, v2::Vertex2D, v3::Vertex2D, v4::Vertex
         b1 = Vertex2D((t2 - t) / (t2 - t0) * a1.x + (t - t0) / (t2 - t0) * a2.x, (t2 - t) / (t2 - t0) * a1.y + (t - t0) / (t2 - t0) * a2.y);
         b2 = Vertex2D((t3 - t) / (t3 - t1) * a2.x + (t - t1) / (t3 - t1) * a3.x, (t3 - t) / (t3 - t1) * a2.y + (t - t1) / (t3 - t1) * a3.y);
         c  = Vertex2D((t2 - t) / (t2 - t1) * b1.x + (t - t1) / (t2 - t1) * b2.x, (t2 - t) / (t2 - t1) * b1.y + (t - t1) / (t2 - t1) * b2.y);
+
         push!(V,c);
     end
     V
