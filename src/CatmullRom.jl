@@ -51,7 +51,7 @@ function IntermediateVertex(v1::Vertex2D, v2::Vertex2D, v3::Vertex2D, v4::Vertex
     t2 = GetT(t1, v2, v3)
     t3 = GetT(t2, v3, v4)
 
-    step = (t2 - t1) / (amountOfPoints)
+    step = (t2 - t1) / 20.0
     for t = t1:step:t2
         a1 = Vertex2D((t1 - t) / (t1 - t0) * v1.x + (t - t0) / (t1 - t0) * v2.x, (t1 - t) / (t1 - t0) * v1.y + (t - t0) / (t1 - t0) * v2.y);
         a2 = Vertex2D((t2 - t) / (t2 - t1) * v2.x + (t - t1) / (t2 - t1) * v3.x, (t2 - t) / (t2 - t1) * v2.y + (t - t1) / (t2 - t1) * v3.y);
