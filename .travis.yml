@@ -6,7 +6,7 @@ julia:
 notifications:
   email: false
 after_success:
-  - julia -e 'using Pkg; cd(Pkg.dir("CatmullRom.jl")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())’;
+  - julia -e 'using Pkg; cd(Pkg.dir("CatmullRom")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())’;
 services: [docker]
 
 before_install:
