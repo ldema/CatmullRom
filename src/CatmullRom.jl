@@ -1,6 +1,6 @@
 module CatmullRom
 
-using Winston
+#using Winston
 
 export Vertex2D, IntermediateVertex, showCatmullRom, CalculateCatmullRom, testCatmullRom
 
@@ -25,9 +25,9 @@ function showCatmullRom(V::Array{Vertex2D})
         push!(Y1,V[i].y)
     end
 
-    pl=plot(X, Y, "b", X1, Y1, "ro")
+    #pl=plot(X, Y, "b", X1, Y1, "ro")
 
-    display(pl)
+    #display(pl)
 end
 
 function CalculateCatmullRom(vertexs::Array{Vertex2D})
