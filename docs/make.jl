@@ -11,5 +11,5 @@ makedocs(
 # for more information.
 deploydocs(
     repo = "github.com/ldema/CatmullRom"
-    #branch = "gh-pages"
+    branch = "gh-pages"
 )
