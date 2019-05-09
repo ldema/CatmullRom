@@ -74,14 +74,11 @@ function GetT(t::Float64, p1::Vertex2D, p2::Vertex2D)
 end
 
 """
-    testCatmullRom()
+    casa()
 
 Returns double the number `x` plus `1`.
 """
 
-"""
-Custom `length` docs for `T`.
-"""
 function testCatmullRom()
     V=Vertex2D[Vertex2D(2.0,2.0),Vertex2D(4.0,3.0),Vertex2D(8.0,2.0),Vertex2D(3.0,1.0)]
     CM=CalculateCatmullRom(V)
