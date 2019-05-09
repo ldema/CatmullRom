@@ -78,6 +78,12 @@ function testCatmullRom()
     #showCatmullRom(CM)
 end
 
+"""
+    func(x)
+
+Returns double the number `x` plus `1`.
+"""
+
 end
 
 ######################
