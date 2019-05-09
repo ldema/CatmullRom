@@ -3,7 +3,7 @@ using CatmullRom
 
 makedocs(
     sitename = "CatmullRom",
-    format = :html,
+    format = Documenter.HTML(),
     modules = [CatmullRom]
 )
 
@@ -11,6 +11,6 @@ makedocs(
 # See "Hosting Documentation" and deploydocs() in the Documenter manual
 # for more information.
 deploydocs(
-    repo = "github.com/ldema/CatmullRom.jl"
+    repo = "github.com/ldema/CatmullRom",
     branch = "gh-pages"
 )
