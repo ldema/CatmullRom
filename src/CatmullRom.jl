@@ -1,7 +1,7 @@
 module CatmullRom
 
 """
-    func(x)
+    showCatmullRom(V::Array{Vertex2D})
 
 Returns double the number `x` plus `1`.
 """

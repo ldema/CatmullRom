@@ -3,5 +3,5 @@
 Documentation for CatmullRom.jl
 
 ```@docs
-func(x)
+showCatmullRom(V::Array{Vertex2D})
 ```
