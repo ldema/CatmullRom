@@ -1,14 +1,18 @@
 module CatmullRom
 
+#using Winston
+
+export Vertex2D, IntermediateVertex, showCatmullRom, CalculateCatmullRom, testCatmullRom
+
 """
-    showCatmullRom(V::Array{Vertex2D})
+    testCatmullRom()
 
 Returns double the number `x` plus `1`.
 """
 
-#using Winston
-
-export Vertex2D, IntermediateVertex, showCatmullRom, CalculateCatmullRom, testCatmullRom
+"""
+Custom `length` docs for `T`.
+"""
 
 struct Vertex2D
     x ::Float64
