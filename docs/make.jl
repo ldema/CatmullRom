@@ -1,5 +1,6 @@
 using Documenter
 using CatmullRom
+
 makedocs(
     sitename = "CatmullRom",
     format = :html,
@@ -13,4 +14,3 @@ deploydocs(
     repo = "github.com/ldema/CatmullRom",
     branch = "gh-pages"
 )
-"""index.md
