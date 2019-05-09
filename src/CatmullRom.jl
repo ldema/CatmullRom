@@ -1,5 +1,11 @@
 module CatmullRom
 
+"""
+    func(x)
+
+Returns double the number `x` plus `1`.
+"""
+
 #using Winston
 
 export Vertex2D, IntermediateVertex, showCatmullRom, CalculateCatmullRom, testCatmullRom
@@ -77,12 +83,6 @@ function testCatmullRom()
     CM=CalculateCatmullRom(V)
     #showCatmullRom(CM)
 end
-
-"""
-    func(x)
-
-Returns double the number `x` plus `1`.
-"""
 
 end
 
