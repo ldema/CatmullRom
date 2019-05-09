@@ -13,3 +13,4 @@ deploydocs(
     repo = "github.com/ldema/CatmullRom",
     branch = "gh-pages"
 )
+"""index.md
