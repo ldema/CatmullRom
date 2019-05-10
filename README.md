@@ -1,6 +1,6 @@
 # CatmullRom.jl
 
-Calculate spline curves
+Calculate spline curves from vertexs
 
 Built using [Julia](https://julialang.org/)'s state-of-the-art.
 
