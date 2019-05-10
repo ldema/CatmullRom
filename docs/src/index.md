@@ -1,7 +1,7 @@
 # CatmullRom.jl
 
 ```@meta
-CurrentModule=CatmullRom
+CurrentModule = CatmullRom
 ```
 
 ```@docs
