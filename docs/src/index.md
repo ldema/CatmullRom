@@ -1,6 +1,6 @@
 # CatmullRom.jl
 
 ```@docs
-testCatmullRom()
+casa()
 ```
 Documentation for CatmullRom.jl
