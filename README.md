@@ -1,6 +1,7 @@
 # CatmullRom.jl
 
-```@docs
+
+```@doc
 testCatmullRom()
 ```
 
