@@ -6,12 +6,18 @@ Built using [Julia](https://julialang.org/)'s state-of-the-art.
 
 This also provides a simple `testCatmullRom()` command line to test !
 
-[![Julia Status](https://julialang.org/)
-[![Build Status](https://travis-ci.com/ldema/CatmullRom)
-[![Documentation Status](http://github/ldema)](http://github/ldema)
-[![PyPI](https://img.shields.io/pypi/v/face_recognition.svg)](https://pypi.python.org/pypi/face_recognition)
-[![Build Status](https://travis-ci.org/ageitgey/face_recognition.svg?branch=master)](https://travis-ci.org/ageitgey/face_recognition)
-[![Documentation Status](https://readthedocs.org/projects/face-recognition/badge/?version=latest)](http://face-recognition.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://travis-ci.com/ldema/CatmullRom.svg?branch=master)](https://travis-ci.com/ldema/CatmullRom)
+
+## Documentation
+
+[docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
+[docs-dev-url]: https://juliadocs.github.io/Documenter.jl/latest
+
+[docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
+[docs-stable-url]: https://github.com/ldema/CatmullRom/blob/master/docs/src/index.md
+
+- [**STABLE**][docs-stable-url] &mdash; **documentation of the most recently tagged version.**
+
 
 ## Example use
 
