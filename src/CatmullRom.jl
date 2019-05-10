@@ -73,7 +73,7 @@ function GetT(t::Float64, p1::Vertex2D, p2::Vertex2D)
     c + t
 end
 
-@doc """
+@docs """
        Compute 2 times x minus y squared.
        """ ->
        function testCatmullRom()
@@ -82,15 +82,15 @@ end
            showCatmullRom(CM)
        end
 
+       """
+           func(x)
 
+       Returns double the number `x` plus `1`.
+       """
+       func(x) = 2x + 1
 end
 
-"""
-    func(x)
 
-Returns double the number `x` plus `1`.
-"""
-func(x) = 2x + 1
 
 ######################
 #for testing CatmullRom

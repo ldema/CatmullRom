@@ -4,8 +4,8 @@
 CurrentModule = CatmullRom
 ```
 
-```@docs
-testCatmullRom()
+```@doc
+f()
 ```
 
 Documentation for CatmullRom.jl

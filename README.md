@@ -1,7 +1,7 @@
 # CatmullRom.jl
 
 ```@doc
-func(x)
+testCatmullRom()
 ```
 
 Documentation for CatmullRom.jl
