@@ -1,5 +1,9 @@
 # CatmullRom.jl
 
+```@meta
+CurrentModule=CatmullRom
+```
+
 ```@docs
 testCatmullRom()
 ```
