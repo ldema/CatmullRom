@@ -1,5 +1,7 @@
 # CatmullRom.jl
 
-'@docs
+```@docs
+casa(x)
+```
 Documentation for CatmullRom.jl
 (Documenter)
