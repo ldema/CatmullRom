@@ -3,7 +3,6 @@
 ```@meta
 CurrentModule = CatmullRom
 ```
-
 ```@docs
 testCatmullRom()
 ```
