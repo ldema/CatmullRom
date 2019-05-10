@@ -5,13 +5,21 @@ module CatmullRom
 
 export Vertex2D, IntermediateVertex, showCatmullRom, CalculateCatmullRom, testCatmullRom
 
-struct Vertex2D
-    x ::Float64
-    y ::Float64
-end
+@doc """
+       type Vertex2D used do define a vertex.
+       typeof() : DataType
+       struct Vertex2D
+           x ::Float64
+           y ::Float64
+       end
+       """ ->
+       struct Vertex2D
+           x ::Float64
+           y ::Float64
+       end
 
 @doc """
-       use showCatmullRom(V::Array{Vertex2D}) for show example.
+       use showCatmullRom(V::Array{Vertex2D}) to show spline curves.
        """ ->
        function showCatmullRom(V::Array{Vertex2D})
 
@@ -35,7 +43,7 @@ end
        end
 
 @doc """
-       use CalculateCatmullRom(vertexs::Array{Vertex2D}) for calculate example.
+       use CalculateCatmullRom(vertexs::Array{Vertex2D}) to calculate spline curves.
        """ ->
        function CalculateCatmullRom(vertexs::Array{Vertex2D})
            V = Vertex2D[]
@@ -80,7 +88,7 @@ function GetT(t::Float64, p1::Vertex2D, p2::Vertex2D)
 end
 
 @doc """
-       use testCatmullRom() for run example.
+       use testCatmullRom() to run example.
        """ ->
        function testCatmullRom()
            V=Vertex2D[Vertex2D(2.0,2.0),Vertex2D(4.0,3.0),Vertex2D(8.0,2.0),Vertex2D(3.0,1.0)]
