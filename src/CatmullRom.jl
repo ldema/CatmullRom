@@ -74,7 +74,7 @@ function GetT(t::Float64, p1::Vertex2D, p2::Vertex2D)
 end
 
 """
-    casa()
+    testCatmullRom()
 
 Returns double the number `x` plus `1`.
 """
