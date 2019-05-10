@@ -3,8 +3,10 @@ using CatmullRom
 
 makedocs(
     sitename = "CatmullRom",
-    format = Documenter.HTML(),
-    modules = [CatmullRom]
+    modules = [CatmullRom]    ,
+    format = Documenter.HTML(
+        prettyurls = get(ENV, "CI", nothing) == "true"
+    )
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.
