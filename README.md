@@ -1,9 +1,8 @@
 # CatmullRom.jl
 
 
-```@doc
-testCatmullRom()
-```
+@doc testCatmullRom()
+
 
 Documentation for CatmullRom.jl
 (Documenter )
