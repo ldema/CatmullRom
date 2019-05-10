@@ -8,7 +8,7 @@ This also provides a simple `testCatmullRom()` command line to test !
 
 [![Julia Status](https://julialang.org/)
 [![Build Status](https://travis-ci.com/ldema/CatmullRom)
-[![Documentation Status](https://readthedocs.org/projects/face-recognition/badge/?version=latest)](http://github/ldema)
+[![Documentation Status](http://github/ldema)](http://github/ldema)
 
 ## Example use
 
