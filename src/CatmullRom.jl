@@ -1,47 +1,52 @@
 module CatmullRom
 
-#using Winston
+using Winston
 
 export Vertex2D, IntermediateVertex, showCatmullRom, CalculateCatmullRom, testCatmullRom
-
 
 struct Vertex2D
     x ::Float64
     y ::Float64
 end
 
-function showCatmullRom(V::Array{Vertex2D})
+@doc """
+       use showCatmullRom(V::Array{Vertex2D}) for show example.
+       """ ->
+       function showCatmullRom(V::Array{Vertex2D})
 
-    X = Float64[]
-    Y = Float64[]
-    for i=1:length(V)
-        push!(X,V[i].x)
-        push!(Y,V[i].y)
-    end
+           X = Float64[]
+           Y = Float64[]
+           for i=1:length(V)
+               push!(X,V[i].x)
+               push!(Y,V[i].y)
+           end
 
-    X1 = Float64[]
-    Y1 = Float64[]
-    for i=1:21:length(V)
-        push!(X1,V[i].x)
-        push!(Y1,V[i].y)
-    end
+           X1 = Float64[]
+           Y1 = Float64[]
+           for i=1:21:length(V)
+               push!(X1,V[i].x)
+               push!(Y1,V[i].y)
+           end
 
-    #pl=plot(X, Y, "b", X1, Y1, "ro")
+           pl=plot(X, Y, "b", X1, Y1, "ro")
 
-    #display(pl)
-end
+           display(pl)
+       end
 
-function CalculateCatmullRom(vertexs::Array{Vertex2D})
-    V = Vertex2D[]
-    s=length(vertexs)
-    for c = 1:s-3
-        V=vcat(V,IntermediateVertex(vertexs[c], vertexs[c + 1], vertexs[c + 2], vertexs[c + 3]))
-    end
-    V=vcat(V, IntermediateVertex(vertexs[s - 2], vertexs[s - 1], vertexs[s], vertexs[1]))
-    V=vcat(V,IntermediateVertex(vertexs[s - 1], vertexs[s ], vertexs[1], vertexs[2]))
-    V=vcat(V,IntermediateVertex(vertexs[s], vertexs[1], vertexs[2], vertexs[3]))
-    V
-end
+@doc """
+       use CalculateCatmullRom(vertexs::Array{Vertex2D}) for calculate example.
+       """ ->
+       function CalculateCatmullRom(vertexs::Array{Vertex2D})
+           V = Vertex2D[]
+           s=length(vertexs)
+           for c = 1:s-3
+               V=vcat(V,IntermediateVertex(vertexs[c], vertexs[c + 1], vertexs[c + 2], vertexs[c + 3]))
+           end
+           V=vcat(V, IntermediateVertex(vertexs[s - 2], vertexs[s - 1], vertexs[s], vertexs[1]))
+           V=vcat(V,IntermediateVertex(vertexs[s - 1], vertexs[s ], vertexs[1], vertexs[2]))
+           V=vcat(V,IntermediateVertex(vertexs[s], vertexs[1], vertexs[2], vertexs[3]))
+           V
+       end
 
 function IntermediateVertex(v1::Vertex2D, v2::Vertex2D, v3::Vertex2D, v4::Vertex2D)
 
@@ -74,7 +79,7 @@ function GetT(t::Float64, p1::Vertex2D, p2::Vertex2D)
 end
 
 @doc """
-       testCatmullRom() for example.
+       use testCatmullRom() for run example.
        """ ->
        function testCatmullRom()
            V=Vertex2D[Vertex2D(2.0,2.0),Vertex2D(4.0,3.0),Vertex2D(8.0,2.0),Vertex2D(3.0,1.0)]
