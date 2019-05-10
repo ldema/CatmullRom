@@ -3,9 +3,8 @@ using CatmullRom
 
 makedocs(
     sitename = "CatmullRom",
-    modules = [CatmullRom]    ,
-    format = Documenter.HTML(
-        prettyurls = get(ENV, "CI", nothing) == "true"
+    modules = [CatmullRom],
+    format = Documenter.HTML(prettyurls = get(ENV, "CI", nothing) == "true"
     )
 )
 

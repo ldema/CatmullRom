@@ -8,6 +8,5 @@ CurrentModule=CatmullRom
 testCatmullRom()
 ```
 
-{docs}
 Documentation for CatmullRom.jl
 (Documenter)
