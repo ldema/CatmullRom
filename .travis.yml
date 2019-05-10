@@ -8,12 +8,12 @@ notifications:
 after_success:
   - julia -e 'using Pkg; cd(Pkg.dir("CatmullRom")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())’;
 
-#addons:
-#     apt:
-#         packages:
-#             - xvfb
-#             - xauth
-#             - libgtk-3-0
+addons:
+     apt:
+         packages:
+             - xvfb
+             - xauth
+             - libgtk-3-0
 
 
 before_install:
