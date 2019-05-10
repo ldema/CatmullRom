@@ -41,7 +41,7 @@ use testCatmullRom() to show a result with v1(2.0,2.0),v2(4.0,3.0),v3(8.0,2.0),v
 
 ## Having problems?
 
-If you run into problems, please read the [Documentation](https://github.com/ageitgey/face_recognition/wiki/Common-Errors) section.
+If you run into problems, please read the [Documentation](https://github.com/ldema/CatmullRom/blob/master/docs/src/index.md) section.
 
 ## Thanks
 
