@@ -18,8 +18,8 @@ This also provides a simple `testCatmullRom()` command line to test !
 
 - [**STABLE**][docs-stable-url] &mdash; **documentation of the most recently tagged version.**
 
-[![](https://img.shields.io/badge/docs-stable-blue.svg)](http://ldema.github.io/CatmullRom.jl/stable)
-[![](https://img.shields.io/badge/docs-dev-blue.svg)](http://ldema.github.io/CatmullRom.jl/dev)
+[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://ldema.github.io/CatmullRom/stable)
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://ldema.github.io/CatmullRom/dev)
 
 
 ## Example use
