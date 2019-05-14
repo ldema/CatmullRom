@@ -42,7 +42,7 @@ export Vertex2D, IntermediateVertex, showCatmullRom, CalculateCatmullRom, testCa
            #display(pl)
        end
 
-@doc """
+@doc   """
        use CalculateCatmullRom(vertexs::Array{Vertex2D}) to calculate spline curves.
        """ ->
        function CalculateCatmullRom(vertexs::Array{Vertex2D})
