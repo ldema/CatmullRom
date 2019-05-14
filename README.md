@@ -6,21 +6,38 @@ Built using [Julia](https://julialang.org/)'s state-of-the-art.
 
 This also provides a simple `testCatmullRom()` command line to test !
 
-[![Build Status](https://travis-ci.com/ldema/CatmullRom.svg?branch=master)](https://travis-ci.com/ldema/CatmullRom)
+| **Documentation**                                                               | **Build Status**                                                                                |
+|:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------:|
+| [![][docs-stable-img]][docs-stable-url] [![][docs-dev-img]][docs-dev-url] | [![][travis-img]][travis-url] |
+
+## Installation
+
+The package can be installed with the Julia package manager.
+From the Julia REPL, type `]` to enter the Pkg REPL mode and run:
+
+```
+pkg> add CatmullRom
+```
+
+Or, equivalently, via the `Pkg` API:
+
+```julia
+julia> import Pkg; Pkg.add("CatmullRom")
+```
 
 ## Documentation
 
 [docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
-[docs-dev-url]: https://juliadocs.github.io/Documenter.jl/latest
+[docs-dev-url]: https://ldema.github.io/CatmullRom/dev
 
 [docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
-[docs-stable-url]: https://github.com/ldema/CatmullRom/blob/master/docs/src/index.md
+[docs-stable-url]: https://ldema.github.io/CatmullRom/stable
+
+[travis-img]: https://travis-ci.com/ldema/CatmullRom.svg?branch=master
+[travis-url]: https://travis-ci.com/ldema/CatmullRom
 
 - [**STABLE**][docs-stable-url] &mdash; **documentation of the most recently tagged version.**
-
-[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://ldema.github.io/CatmullRom/stable)
-[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://ldema.github.io/CatmullRom/dev)
-
+- [**DEVEL**][docs-stable-url] &mdash; **documentation of in-development version.**
 
 ## Example use
 
@@ -33,20 +50,17 @@ Create Spline from passing through some predefined vertexs.
 ```Julia
 Julia>testCatmullRom()
 ```
+testCatmullRom() show a result with v1(2.0,2.0),v2(4.0,3.0),v3(8.0,2.0),v4(3.0,2,0) vertexs
+![Alt text](CatmullRom.png?raw=true "Title")
 
 #### How to create spline curves
 
 Create Spline passing through defined array of vertexs.
 ```Julia
-V=Vertex2D[Vertex2D(2.0,2.0),Vertex2D(4.0,3.0),Vertex2D(8.0,2.0),Vertex2D(3.0,1.0)]
-CM=CalculateCatmullRom(V)
-showCatmullRom(CM)
+Julia>V=Vertex2D[Vertex2D(2.0,2.0),Vertex2D(4.0,3.0),Vertex2D(8.0,2.0),Vertex2D(3.0,1.0)]
+Julia>CM=CalculateCatmullRom(V)
+Julia>showCatmullRom(CM)
 ```
-Result
-use testCatmullRom() to show a result with v1(2.0,2.0),v2(4.0,3.0),v3(8.0,2.0),v4(3.0,2,0) vertexs
-![Alt text](CatmullRom.png?raw=true "Title")
-
-
 ### Requirements
 
   * Julia 1.0.3
