@@ -1,8 +1,4 @@
 
-[compat]
-Documenter = "~$(v.major).$(v.minor)"
-
-
 name = "CatmullRom"
 uuid = "eba0ab80-6ea7-11e9-23ec-f993929b585e"
 authors = ["Luigi "]
